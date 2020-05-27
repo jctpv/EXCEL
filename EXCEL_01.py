@@ -43,18 +43,18 @@ print(df.iloc[2:6])
 print("------10.3------") #especific location [row, column)
 print(df.iloc[2,2])
 
-print("------11.1------") #print a linha com a respectiva head
+print("------11.1------") #print a linha com a respectiva head columns, todas as column
 for each in df.iterrows():
     print(each)
-print("------11.2------")#print a linha com a respectiva head
+print("------11.2------")#print a linha com a respectiva head,, todas as column
 for index, row in df.iterrows():
     print(index, row)
-print("------11.3------") ##print as column selecionadas de cada row
+print("------11.3------") ##print as column selecionadas de cada row, , todas as column de B a A
 for (index, row) in df.iterrows():
     print(index, row[["B", "A"]])
-print("------11.4------") ##print as column selecionadas de cada row
+print("------11.4------") ##print as column selecionadas de cada row, todas as column de 1 a 3 "B a C"
 for (index, row) in df.iterrows():
-    print(index, row[2:4])
+    print(index, row[1:3])
 print("------11.5------") ##print a row e a column selecionada na sequencia
 for (index, row) in df.iterrows():
-    print(index, row["B"])
+    print(index, row["B"],row["A"])
